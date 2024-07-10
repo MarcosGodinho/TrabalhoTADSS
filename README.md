@@ -95,3 +95,36 @@ Exemplo de um documento `PEDIDOS`:
 ```
 
 Por favor, note que os dados reais no campo `LOGO_IMG` na coleção `LOJAS` e o status real no campo `status_pedido` na coleção `PEDIDOS` variarão dependendo da loja e do pedido específicos.
+
+# Vantagens e Desvantagens do seu Protótipo MongoDB para VendeMuito+ Ltda
+
+## Vantagens:
+
+### Flexibilidade:
+- Armazenamento de dados não estruturados e semiestruturados (fotos, vídeos, textos) ideal para informações adicionais sobre pedidos (fotos de produtos, avaliações).
+- Adaptabilidade a mudanças no modelo de negócio sem necessidade de grandes reformulações no banco de dados.
+
+### Escalabilidade:
+- Crescimento horizontal com adição de servidores ao cluster, sem necessidade de troca por hardware mais potente.
+- Suporte a um grande volume de dados de pedidos da VendeMuito+ Ltda, mesmo com o crescimento da empresa.
+
+### Desempenho:
+- Consultas complexas eficientes, especialmente para campos em um único documento.
+- Geração rápida de relatórios sobre pedidos (por região, categoria de produto, etc.) para auxiliar na tomada de decisões.
+
+## Desvantagens:
+
+### Maturidade:
+- Banco de dados relativamente novo, com menos ferramentas e recursos disponíveis para desenvolvedores e administradores.
+- Possível curva de aprendizado mais acentuada para implementação e manutenção do banco de dados.
+
+### Consistência:
+- Consistência eventual, com alterações em um documento não visíveis imediatamente para outras leituras.
+- Possíveis discrepâncias nos dados em situações que exigem visão em tempo real do estado dos pedidos.
+
+### Segurança:
+- Nível de segurança menor que bancos de dados relacionais tradicionais.
+- Implementação de medidas adicionais de segurança (criptografia, controle de acesso) para proteger dados confidenciais da VendeMuito+ Ltda.
+
+## Recomendação:
+O MongoDB apresenta vantagens em flexibilidade, escalabilidade e desempenho para consultas complexas, mas exige atenção à maturidade do banco de dados, à consistência eventual e à implementação de medidas de segurança robustas. A VendeMuito+ Ltda deve avaliar cuidadosamente suas necessidades e realizar testes para determinar se o MongoDB é a melhor opção para seus objetivos.
